@@ -17,6 +17,8 @@ img {
     image-orientation: from-image;
 }
 
+/* Navbar & Footer*/
+
 .navbar {
     padding: .8rem;
 }
@@ -92,6 +94,8 @@ footer h5 {
     margin-top: .3rem;
     margin-bottom: 1rem;
 }
+
+
 
 /* Fonts, Buttons & Other Elements */
 
@@ -200,64 +204,6 @@ hr.light-100 {
     border-radius: 20px;
 }
 
-/* resume.html */
-
-.resume-padding {
-    padding-left: 5rem;
-}
-
-.resume-hr-bottom {
-    margin-top: .5rem;
-    margin-bottom: 0%;
-}
-
-.resume-hr-top {
-    margin-top: 0%;
-    margin-bottom: .5rem;
-}
-
-resume div {
-    padding: 0%;
-}
-
-.resume-left {
-    display: inline-block;
-}
-
-.resume-right {
-    /* display: inline-block;
-    float: right; */
-    padding-right: 5rem;
-}
-
-.resume-date-right {
-    display: inline-block;
-    float: right;
-    padding-right: 5rem;
-}
-
-.resume-justify {
-    padding-left: 2rem;
-    padding-right: 5rem;
-    text-align: justify;
-}
-
-.resume-justify-ul {
-    padding-left: 4rem;
-    padding-right: 5rem;
-    text-align: justify;
-}
-
-.resume-link a {
-    color: darkslategray;
-}
-
-.resume-link a:hover {
-    color: blue;
-    text-decoration: none;
-    font-weight: bold;
-}
-
 /* activities.html */
 
 .activities-container {
@@ -321,7 +267,7 @@ resume div {
 
 .blogheader-img {
     width: 100%;
-    height: 250px;
+    /* height: 350px; */
 }
 
 .blog-head-major-txt {
@@ -335,7 +281,16 @@ resume div {
 
 .blog-head-minor-txt {
     position: absolute;
-    top: 25%;
+    top: 26%;
+    left: 0;
+    width: 100%;
+    font-size: 1rem;
+    color: whitesmoke;
+}
+
+.blog-head-quote-txt {
+    position: absolute;
+    top: 80%;
     left: 0;
     width: 100%;
     font-size: 1rem;
@@ -366,12 +321,21 @@ resume div {
     margin: auto;
 }
 
+.affix {
+    top: 20px;
+    z-index: 9999 !important;
+}
+
 /*---Media Queries --*/
 
 @media (max-width: 992px) {
     .social a {
         font-size: 4em;
         padding: 2rem;
+    }
+
+    .display-4 {
+        font-size: 90%;
     }
 }
 
@@ -391,9 +355,9 @@ resume div {
         font-size: 95%;
         padding: 8px 14px;
     }
-    .display-4 {
-        font-size: 200%;
-    }
+    /* .display-4 {
+        font-size: 100%;
+    } */
     .social a {
         font-size: 2.5em;
         padding: 1.2rem;
@@ -417,12 +381,22 @@ resume div {
     .carousel-indicators {
         display: none;
     }
-    .display-4 {
+    /* .display-4 {
         font-size: 160%;
-    }
+    } */
     .social a {
         font-size: 2em;
         padding: .7rem;
+    }
+    .blog-head-major-txt {
+        font-size: 1.5rem;
+    }
+    .blog-head-minor-txt {
+        font-size: .75rem;
+        top: 23%;
+    }
+    .blog-head-quote-txt {
+        font-size: .75rem;
     }
 }
 

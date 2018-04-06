@@ -1,17 +1,12 @@
 export class HomeController {
   constructor() {
+
   }
 }
 
 export class AboutController {
   constructor() {
     this.message = 'about page';
-  }
-}
-
-export class ResumeController {
-  constructor() {
-    this.message = 'resume page';
   }
 }
 
@@ -37,5 +32,7 @@ export class TodoController {
     this.message = 'Todo List';
   }
 }
+
+
 
 

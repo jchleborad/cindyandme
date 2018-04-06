@@ -5,7 +5,6 @@ import uiBootstrap from 'angular-bootstrap-npm';
 import {
   HomeController,
   AboutController,
-  ResumeController,
   ActivitiesController,
   BlogController,
   TodoController,
@@ -28,12 +27,6 @@ function routing($stateProvider, $urlRouterProvider, $locationProvider) {
       url: "/about",
       templateUrl: "/ngApp/views/about.html",
       controller: AboutController,
-      controllerAs: "controller"
-    })
-    .state("resume", {
-      url: "/resume",
-      templateUrl: "/ngApp/views/resume.html",
-      controller: ResumeController,
       controllerAs: "controller"
     })
     .state("activities", {

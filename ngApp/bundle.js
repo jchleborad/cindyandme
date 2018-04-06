@@ -108,11 +108,6 @@ function routing($stateProvider, $urlRouterProvider, $locationProvider) {
     templateUrl: "/ngApp/views/about.html",
     controller: _controllers.AboutController,
     controllerAs: "controller"
-  }).state("resume", {
-    url: "/resume",
-    templateUrl: "/ngApp/views/resume.html",
-    controller: _controllers.ResumeController,
-    controllerAs: "controller"
   }).state("activities", {
     url: "/activities",
     templateUrl: "/ngApp/views/activities.html",
@@ -48527,12 +48522,6 @@ var AboutController = exports.AboutController = function AboutController() {
   _classCallCheck(this, AboutController);
 
   this.message = 'about page';
-};
-
-var ResumeController = exports.ResumeController = function ResumeController() {
-  _classCallCheck(this, ResumeController);
-
-  this.message = 'resume page';
 };
 
 var ActivitiesController = exports.ActivitiesController = function ActivitiesController() {
