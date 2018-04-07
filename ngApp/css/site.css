@@ -55,6 +55,22 @@ footer h5 {
 
 /* home.html */
 
+.hr-quote-top {
+    width: 50%;
+    margin-top: 0%;
+    margin-bottom: .5rem;
+    height: 2px;
+    border-color: darkgray;
+}
+
+.hr-quote-bottom {
+    width: 50%;
+    margin-top: .5rem;
+    margin-bottom: 0%;
+    height: 2px;
+    border-color: darkgray;
+}
+
 .carousel-inner img {
     width: 97%;
     height: 100%;
@@ -95,8 +111,6 @@ footer h5 {
     margin-bottom: 1rem;
 }
 
-
-
 /* Fonts, Buttons & Other Elements */
 
 .btn-primary {
@@ -129,7 +143,7 @@ footer h5 {
 }
 
 .social a {
-    font-size: 4.5em;
+    font-size: 2.5em;
     padding: 3rem;
     text-decoration: none;
 }
@@ -191,17 +205,22 @@ hr.light-100 {
     color: #fc4c02;
 }
 
+.fa-facebook-f,
+.fa-linkedin-in,
+.fa-instagram,
+.fa-twitter,
+.fa-strava {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
 .fa-facebook-f:hover,
 .fa-linkedin-in:hover,
 .fa-instagram:hover,
 .fa-twitter:hover,
-.fa-strava:hover {
-    color: #c8c487;
-}
-
-.fa-moose:hover {
-    background-color: #c8c487;
-    border-radius: 20px;
+.fa-strava:hover,
+.fa-jicon:hover {
+    opacity: .5;
 }
 
 /* activities.html */
@@ -326,6 +345,11 @@ hr.light-100 {
     z-index: 9999 !important;
 }
 
+input::placeholder {
+    color: lightgray;
+    font-size: .8rem;
+}
+
 /*---Media Queries --*/
 
 @media (max-width: 992px) {
@@ -333,7 +357,6 @@ hr.light-100 {
         font-size: 4em;
         padding: 2rem;
     }
-
     .display-4 {
         font-size: 90%;
     }
