@@ -60,6 +60,7 @@ footer div h5 {
 footer div p {
     font-size: .6rem;
 }
+
 /* home.html */
 
 .hr-quote-top {
@@ -124,17 +125,62 @@ footer div p {
     text-align: center;
 }
 
-.pointer:hover {
-    cursor: pointer;
-    opacity: .5;
-    font-size: 1.3rem;
-}
-
 .img-header {
     width: 100%;
     height: 95%;
     border-radius: 3px;
     box-shadow: 0 3px 6px rgba(0, 0, 0, 0.9);
+}
+
+/* SOCIAL MEDIA STYLES */
+
+.fa-facebook-f {
+    color: #3b5998;
+}
+
+.fa-linkedin-in {
+    color: #0077b5;
+}
+
+.fa-instagram {
+    color: #517fa4;
+}
+
+.fa-twitter {
+    color: #00aced;
+}
+
+.fa-strava {
+    color: #fc4c02;
+}
+
+.fa-facebook-f,
+.fa-linkedin-in,
+.fa-instagram,
+.fa-twitter,
+.fa-strava,
+.fa-jicon:hover {
+    font-size: 1.5rem;
+    margin-bottom: .5rem;
+}
+
+.fa-facebook-f:hover,
+.fa-linkedin-in:hover,
+.fa-instagram:hover,
+.fa-twitter:hover,
+.fa-strava:hover,
+.fa-jicon:hover {
+    opacity: .5;
+}
+
+.sm-cardheader {
+    font-size: .8rem;
+}
+
+.pointer:hover {
+    cursor: pointer;
+    opacity: .5;
+    font-size: 1rem;
 }
 
 @media screen and (orientation: portrait) {
@@ -223,44 +269,6 @@ hr.light-100 {
     color: black;
 }
 
-.fa-facebook-f {
-    color: #3b5998;
-}
-
-.fa-linkedin-in {
-    color: #0077b5;
-}
-
-.fa-instagram {
-    color: #517fa4;
-}
-
-.fa-twitter {
-    color: #00aced;
-}
-
-.fa-strava {
-    color: #fc4c02;
-}
-
-.fa-facebook-f,
-.fa-linkedin-in,
-.fa-instagram,
-.fa-twitter,
-.fa-strava {
-    font-size: 3rem;
-    margin-bottom: 1rem;
-}
-
-.fa-facebook-f:hover,
-.fa-linkedin-in:hover,
-.fa-instagram:hover,
-.fa-twitter:hover,
-.fa-strava:hover,
-.fa-jicon:hover {
-    opacity: .5;
-}
-
 /* activities.html */
 
 .activities-container {
@@ -290,6 +298,9 @@ input::placeholder {
     font-size: .8rem;
 }
 
+img.wrap {
+    float:right;
+}
 /* Paragraph Fade */
 
 section {
@@ -310,6 +321,7 @@ section::after {
 }
 
 /* .Paragraph Fade */
+
 /* .Blog Posts */
 
 /*---Media Queries --*/
@@ -436,4 +448,13 @@ Large (lg) devices (desktops, 992px and up)
 
 Extra (xl) large devices (large desktops, 1200px and up)
 @media (min-width: 1200px) { ... }
+*/
+
+/* FONT SIZES HEADINGS TO REM
+H1 = 2.5rem
+H2 = 2.00rem
+H3 = 1.75rem
+H4 = 1.50rem
+H5 = 1.25rem
+H6 = 1.00rem
 */

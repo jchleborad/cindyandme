@@ -27,6 +27,12 @@ export class PageazController {
   }
 }
 
+export class SandiegcaController {
+  constructor() {
+    this.message = 'San Diego Blog Post';
+  }
+}
+
 export class TodoController {
   constructor() {
     this.message = 'Todo List';

@@ -7,8 +7,9 @@ import {
   AboutController,
   ActivitiesController,
   BlogController,
-  TodoController,
   PageazController,
+  SandiegocaController,
+  TodoController,
 } from './controllers/controllers';
 
 angular.module('myApp', [uirouter, ngResource, uiBootstrap]).config(routing);
@@ -45,6 +46,12 @@ function routing($stateProvider, $urlRouterProvider, $locationProvider) {
       url: "/pageaz",
       templateUrl: "/ngApp/views/blog_posts/pageaz.html",
       controller: PageazController,
+      controllerAs: "controller"
+    })
+    .state("sandiegoca", {
+      url: "/sandiegoca",
+      templateUrl: "/ngApp/views/blog_posts/sandiegoca.html",
+      controller: SandiegocaController,
       controllerAs: "controller"
     })
     .state("todo", {

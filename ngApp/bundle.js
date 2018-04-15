@@ -123,6 +123,11 @@ function routing($stateProvider, $urlRouterProvider, $locationProvider) {
     templateUrl: "/ngApp/views/blog_posts/pageaz.html",
     controller: _controllers.PageazController,
     controllerAs: "controller"
+  }).state("sandiegoca", {
+    url: "/sandiegoca",
+    templateUrl: "/ngApp/views/blog_posts/sandiegoca.html",
+    controller: _controllers.SandiegocaController,
+    controllerAs: "controller"
   }).state("todo", {
     url: "/todo",
     templateUrl: "/ngApp/views/todo.html",
@@ -48540,6 +48545,12 @@ var PageazController = exports.PageazController = function PageazController() {
   _classCallCheck(this, PageazController);
 
   this.message = 'Page Blog Post';
+};
+
+var SandiegcaController = exports.SandiegcaController = function SandiegcaController() {
+  _classCallCheck(this, SandiegcaController);
+
+  this.message = 'San Diego Blog Post';
 };
 
 var TodoController = exports.TodoController = function TodoController() {
