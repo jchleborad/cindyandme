@@ -299,8 +299,9 @@ input::placeholder {
 }
 
 img.wrap {
-    float:right;
+    float: right;
 }
+
 /* Paragraph Fade */
 
 section {
@@ -324,12 +325,25 @@ section::after {
 
 /* .Blog Posts */
 
+div.blog-quote {
+    margin-top: 10.6rem;
+}
+
+.img-pot {
+    border: solid 1px #ccc;
+    box-shadow: 1px 1px 5px #999;
+    padding: 25px;
+}
+
 /*---Media Queries --*/
 
 @media (max-width: 992px) {
     .social a {
         font-size: 4em;
         padding: 2rem;
+    }
+    div.blog-quote {
+        margin-top: 1rem;
     }
 }
 
